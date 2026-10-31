@@ -1,19 +1,21 @@
 ﻿---
 import CyberDashboard from '../components/CyberDashboard.jsx';
-import samuraiGif from '../assets/samurai-glitch.gif';
-import quickhackImg from '../assets/quickhack.webp';
 import '../styles/global.css';
+import samuraiGlitch from '../assets/samurai-glitch.gif';
+import quickhackImg from '../assets/quickhack.webp';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Jareer Haider // Cyberdeck & Hardware Portfolio</title>
-	</head>
-	<body class="bg-[#08090d] text-slate-200">
-		<CyberDashboard client:load samuraiImg={samuraiGif.src} quickhackImg={quickhackImg.src} />
-	</body>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jareer Haider // System Architecture & Hardware</title>
+  </head>
+  <body class="bg-[#07080c] text-slate-100 font-sans m-0 p-0">
+    <CyberDashboard 
+      samuraiImg={samuraiGlitch.src} 
+      quickhackImg={quickhackImg.src}
+      client:load 
+    />
+  </body>
 </html>
